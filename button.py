@@ -45,7 +45,7 @@ class Button:
         text(
             self.button_text,
             self.X + (self.W - textWidth(self.button_text)) / 2,
-            self.Y + self.text_size + 2,
+            self.Y + self.text_size,
         )
 
     def _overBox(self, x, y):

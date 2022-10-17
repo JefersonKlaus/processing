@@ -52,7 +52,7 @@ class TextBox:
         __is_key_number = False
 
         if self.selected:
-            if KEYCODE == BACKSPACE:
+            if KEY == BACKSPACE:
                 self._backspace()
 
             elif KEYCODE == 32:  # SPACE
@@ -79,7 +79,7 @@ class TextBox:
 
     def _backspace(self):
         if self.text_length - 1 >= 0:
-            self.text_content = self.text_content.substring(0, self.text_length - 1)
+            self.text_content = self.text_content[0 : self.text_length - 1]
             self.text_length -= 1
 
     # method to test if the point is over the textbox
