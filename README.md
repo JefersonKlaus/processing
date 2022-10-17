@@ -6,4 +6,7 @@ This project is a JAVA to Python translation of Mitko Nikov's [project](https://
 * Textbox
 
 ### Demo
-[Demo](img\demo.png)
+![Demo](img/demo.png)
+
+### Processing
+All informations about how to use processing with python you can find on this [Site](https://py.processing.org/).
