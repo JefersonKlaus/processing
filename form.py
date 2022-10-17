@@ -8,6 +8,10 @@ text_boxes = []
 locked = False
 name = ""
 
+# button submit action
+def btn_submit_method():
+    print("pressed")
+
 
 def setup():
     size(400, 250)
@@ -20,6 +24,7 @@ def setup():
     # Buttons
     submit_btn = Button(100, 143, 200, 35)
     submit_btn.button_text = "Submit!"
+    submit_btn.action = btn_submit_method
     buttons.append(submit_btn)
 
 
@@ -53,5 +58,5 @@ def mouseReleased():
 # this is a default method of processing
 def keyPressed():
     for t in text_boxes:
-        print('oi')
+        print("oi")
         t.key_pressed(key, keyCode)

@@ -1,5 +1,3 @@
-
-
 class TextBox:
     X = 0
     Y = 0
@@ -57,7 +55,7 @@ class TextBox:
             if KEYCODE == BACKSPACE:
                 self._backspace()
 
-            elif KEYCODE == 32: # SPACE                
+            elif KEYCODE == 32:  # SPACE
                 self._addText(" ")
 
             elif KEYCODE == ENTER:

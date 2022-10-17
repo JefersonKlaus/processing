@@ -14,6 +14,7 @@ class Button:
     border_weight = 1
 
     clicked = False
+    action = None  # method to be called when this button is pressed
 
     button_text = ""
     text_size = 24
@@ -55,10 +56,10 @@ class Button:
         return False
 
     def pressed(self, x, y):
-        print("pressed")
         if self._overBox(x, y):
             self.clicked = True
+            if self.action:
+                self.action()
 
     def released(self):
-        print("released")
         self.clicked = False
