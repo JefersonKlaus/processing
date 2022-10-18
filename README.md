@@ -10,3 +10,11 @@ This project is a JAVA to Python translation of Mitko Nikov's [project](https://
 
 ### Processing
 All informations about how to use processing with python you can find on this [Site](https://py.processing.org/).
+
+### How to debug
+```python
+try:
+    YOUR CODE HERE
+except Exception as error:
+    print(error)
+```
